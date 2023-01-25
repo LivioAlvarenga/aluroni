@@ -1,5 +1,5 @@
 <h1 align="center"> 
-	Desenvolvendo um Planejador de Estudos com React, TypeScript, ViteJs e TailwindCss
+	Em construção...
 </h1>
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
@@ -13,27 +13,21 @@
 
 &nbsp;
 
-![Study Planner](https://github.com/LivioAlvarenga/studyPlanner/blob/master/files/capa.gif?raw=true#vitrinedev)
+![Aluroni](https://github.com/LivioAlvarenga/aluroni/blob/master/files/capa.gif?raw=true#vitrinedev)
 
 &nbsp;
 <a id="-sobre-o-projeto"></a>
 
 ## 💻 Sobre o projeto
 
-🚀 É um planejador de estudos desenvolvido em ViteJs, TypeScript, React e TailwindCSS.
-
-Usei o ViteJs para iniciar o projeto React com TypeScript.
-
-Usei todos os principais conceitos de ReactJs para desenvolver esta aplicação como: Componentização, Renderização dinâmica, Props, Hooks (useState e useEffect).
-
-Utilizei o TailwindCss para abstrair o CSS.
+🚀 Em construção...
 
 <p align="center">
-  <a href="#license"><img src="https://img.shields.io/github/license/LivioAlvarenga/studyPlanner?color=ff0000"></a>
-  <a href="https://github.com/LivioAlvarenga/studyPlanner/issues"><img src="https://img.shields.io/github/issues/LivioAlvarenga/studyPlanner" alt="issue site alurabooks" /></a>
-  <a href="https://github.com/LivioAlvarenga/studyPlanner"><img src="https://img.shields.io/github/languages/count/LivioAlvarenga/studyPlanner" alt="total amount of programming languages used in the project" /></a>
-  <a href="https://github.com/LivioAlvarenga/studyPlanner"><img src="https://img.shields.io/github/languages/top/LivioAlvarenga/studyPlanner" alt="most used language in the projects" /></a>
-  <a href="https://github.com/LivioAlvarenga/studyPlanner"><img src="https://img.shields.io/github/repo-size/LivioAlvarenga/studyPlanner" alt="repository size" /></a>
+  <a href="#license"><img src="https://img.shields.io/github/license/LivioAlvarenga/aluroni?color=ff0000"></a>
+  <a href="https://github.com/LivioAlvarenga/aluroni/issues"><img src="https://img.shields.io/github/issues/LivioAlvarenga/aluroni" alt="issue site aluroni" /></a>
+  <a href="https://github.com/LivioAlvarenga/aluroni"><img src="https://img.shields.io/github/languages/count/LivioAlvarenga/aluroni" alt="total amount of programming languages used in the project" /></a>
+  <a href="https://github.com/LivioAlvarenga/aluroni"><img src="https://img.shields.io/github/languages/top/LivioAlvarenga/aluroni" alt="most used language in the projects" /></a>
+  <a href="https://github.com/LivioAlvarenga/aluroni"><img src="https://img.shields.io/github/repo-size/LivioAlvarenga/aluroni" alt="repository size" /></a>
 <p>
 
 &nbsp;
@@ -48,7 +42,7 @@ Utilizei o TailwindCss para abstrair o CSS.
 | :placard: Vitrine.Dev |                                                                                        |
 | --------------------- | -------------------------------------------------------------------------------------- |
 | :sparkles: Nome       | **Desenvolvendo um Planejador de Estudos com React, TypeScript, ViteJs e TailwindCss** |
-| :label: Tecnologias   | React, TypeScript, TailwindCSS, ViteJs, NodeJs, JavaScript, HTML5, CSS3, Prettier      |
+| :label: Tecnologias   | React, TypeScript, ViteJs, NodeJs, JavaScript, HTML5, CSS3, Prettier                   |
 | :rocket: URL          | https://study-planner-livio-alvarenga.vercel.app/                                      |
 
 ---
@@ -84,10 +78,10 @@ As seguintes ferramentas foram usadas na construção do projeto
 
 ```bash
 # Criando projeto com ViteJs e React e TypeScript
-npm create vite@latest studyPlanner -- --template react-ts
+npm create vite@latest aluroni -- --template react-ts
 
 # Instalando dependências
-cd studyPlanner
+cd aluroni
 npm install
 
 # Instalando faker
@@ -129,12 +123,7 @@ npm run dev
 
 ## ⚙️ Funcionalidades
 
-- Input para adicionar Tarefa;
-- Input para adicionar Tempo;
-- Lista dinâmica de tarefas e tempo;
-- Seleção de tarefas e adição de tempo em cronometro;
-- Start de cronometro e identificação de concluído em lista de tarefas;
-- Estilização moderna com conceitos avançados de CSS.
+- Em construção...
 
 &nbsp;
 
@@ -142,9 +131,9 @@ npm run dev
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/livioalvarenga/studyPlanner.git
+$ git clone https://github.com/livioalvarenga/aluroni.git
 # Acesse a pasta do projeto no seu terminal/cmd
-$ cd studyPlanner
+$ cd aluroni
 # Instale as dependências
 $ npm install
 # Execute a aplicação em modo de desenvolvimento
