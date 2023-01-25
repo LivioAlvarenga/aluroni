@@ -100,6 +100,22 @@ export default defineConfig({
 # Crie uma pasta type e add file svg.d.ts
 /// <reference types="vite-plugin-svgr/client" />
 
+# Instalando vite-tsconfig-paths para fazer imports absolutos
+npm install -D vite-tsconfig-paths
+
+# Em vite.config.ts adicione import e plugin
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
+import svgr from "vite-plugin-svgr";
+import tsconfigPaths from "vite-tsconfig-paths";
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react(), svgr(), tsconfigPaths()],
+});
+
+# Em tsconfig.json adicione a baseURL em compilerOptions
+"baseUrl": "./src"
 
 # Instalando arquitetura Tailwindcss
 
