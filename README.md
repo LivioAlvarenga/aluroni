@@ -84,26 +84,44 @@ npm create vite@latest aluroni -- --template react-ts
 cd aluroni
 npm install
 
-# Instalando faker
-npm install --save-dev @faker-js/faker
+# Instalando vite-plugin-svgr para criar componentes SVG
+npm install vite-plugin-svgr -D
+
+# Em vite.config.ts adicione import e plugin
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
+import svgr from "vite-plugin-svgr";
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react(), svgr()],
+});
+
+# Crie uma pasta type e add file svg.d.ts
+/// <reference types="vite-plugin-svgr/client" />
+
 
 # Instalando arquitetura Tailwindcss
+
 npm install -D tailwindcss postcss autoprefixer prettier prettier-plugin-tailwindcss
 
 # Criando tailwind.config.cjs
+
 npx tailwindcss init -p
 
 # Editando npx tailwind.config.cjs
-/** @type {import('tailwindcss').Config} */
+
+/** @type {import('tailwindcss').Config} \*/
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
+content: ["./index.html", "./src/**/\*.{js,ts,jsx,tsx}"],
+theme: {
+extend: {},
+},
+plugins: [],
 }
 
-# Adicionando configuração Tailwindcss em index.css
+# Adicionando configuração Tailwindcss em global.css
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities
@@ -111,7 +129,9 @@ module.exports = {
 # Cria arquivo .prettierrc.json na raiz do projeto
 
 # Inicia projeto
+
 npm run dev
+
 ```
 
 &nbsp;
