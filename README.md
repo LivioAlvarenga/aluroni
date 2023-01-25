@@ -76,8 +76,9 @@ As seguintes ferramentas foram usadas na construção do projeto
 
 ## ⚙️ Instalações
 
+### Criando projeto com ViteJs e React e TypeScript
+
 ```bash
-# Criando projeto com ViteJs e React e TypeScript
 npm create vite@latest aluroni -- --template react-ts
 
 # Instalando dependências
@@ -116,9 +117,11 @@ export default defineConfig({
 
 # Em tsconfig.json adicione a baseURL em compilerOptions
 "baseUrl": "./src"
+```
 
-# Instalando arquitetura Tailwindcss
+### Instalando arquitetura Tailwindcss
 
+```bash
 npm install -D tailwindcss postcss autoprefixer prettier prettier-plugin-tailwindcss
 
 # Criando tailwind.config.cjs
