@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         italiana: ["Italiana", "sans-serif"],
       },
+      backgroundImage: {
+        header: "url('./src/assets/images/header.png')",
+      },
     },
   },
   plugins: [],
