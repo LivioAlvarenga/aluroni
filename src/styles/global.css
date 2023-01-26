@@ -12,15 +12,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.padding-horizontal {
-  @apply px-[250px];
-}
-.padding-horizontal-md {
-  @apply px-[200px];
-}
-.padding-horizontal-mobile {
-  @apply px-[100px];
-}
-.padding-horizontal-sm {
-  @apply px-[50px];
+@layer components {
+  .paddingDefault {
+    @apply px-[100px] desktop_xsm:px-[150px] desktop_sm:px-[200px] desktop_md:px-[250px]
+  }
 }
