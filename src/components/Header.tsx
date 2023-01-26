@@ -1,9 +1,9 @@
 export default function Header() {
   return (
-    <header className="padding-horizontal flex items-center bg-header bg-cover bg-no-repeat">
-      <div className="w-2/5 min-w-[400px] text-[5rem] text-white">
+    <header className="flex items-center bg-header bg-cover bg-no-repeat py-0 paddingDefault">
+      <h1 className="w-2/5 min-w-[400px] text-[5rem] text-white">
         A casa do código e da massa
-      </div>
+      </h1>
     </header>
   );
 }
