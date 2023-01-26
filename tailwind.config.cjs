@@ -19,6 +19,16 @@ module.exports = {
         red: "#d73b3b",
       },
     },
+    screens: {
+      mobile: "768px",
+      // => @media (min-width: 768px) { ... }
+      desktop_xsm: "980px",
+      // => @media (min-width: 980px) { ... }
+      desktop_sm: "1080px",
+      // => @media (min-width: 1080px) { ... }
+      desktop_md: "1280px",
+      // => @media (min-width: 1280px) { ... }
+    },
   },
   plugins: [],
 };
