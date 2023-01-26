@@ -13,5 +13,14 @@
 @tailwind utilities;
 
 .padding-horizontal {
-  @apply px-[250px]
+  @apply px-[250px];
+}
+.padding-horizontal-mobile {
+  @apply px-[100px];
+}
+.padding-horizontal-sm {
+  @apply px-[50px];
+}
+.padding-horizontal-md {
+  @apply px-[200px];
 }
