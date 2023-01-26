@@ -20,13 +20,13 @@ module.exports = {
       },
     },
     screens: {
-      mobile: "768px",
+      tablet: "768px",
       // => @media (min-width: 768px) { ... }
-      desktop_xsm: "980px",
+      desktop_md: "980px",
       // => @media (min-width: 980px) { ... }
-      desktop_sm: "1080px",
+      desktop_lg: "1080px",
       // => @media (min-width: 1080px) { ... }
-      desktop_md: "1280px",
+      desktop_xl: "1280px",
       // => @media (min-width: 1280px) { ... }
     },
   },

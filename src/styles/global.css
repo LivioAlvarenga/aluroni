@@ -14,6 +14,22 @@
 
 @layer components {
   .paddingDefault {
-    @apply px-[100px] desktop_xsm:px-[150px] desktop_sm:px-[200px] desktop_md:px-[250px]
+    @apply px-[100px] desktop_md:px-[150px] desktop_lg:px-[200px] desktop_xl:px-[250px];
   }
 }
+
+/* 
+$padding-horizontal-mobile: 100px;
+$padding-horizontal-sm: 150px;
+$padding-horizontal-md: 200px;
+$padding-horizontal: 250px;
+
+tablet: "768px", || $mobile: 768px;
+  // => @media (min-width: 768px) { ... }
+desktop_md: "980px", || $desktop_xsm: 980px;
+  // => @media (min-width: 980px) { ... }
+desktop_lg: "1080px", || $desktop_sm: 1080px;
+  // => @media (min-width: 1080px) { ... }
+desktop_xl: "1280px", || $desktop_md: 1280px;
+  // => @media (min-width: 1280px) { ... }
+*/
