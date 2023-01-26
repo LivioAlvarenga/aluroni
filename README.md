@@ -117,6 +117,9 @@ export default defineConfig({
 
 # Em tsconfig.json adicione a baseURL em compilerOptions
 "baseUrl": "./src"
+
+# Instalando react-icons
+npm install react-icons
 ```
 
 ### Instalando arquitetura Tailwindcss
