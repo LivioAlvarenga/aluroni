@@ -156,6 +156,13 @@ npm run dev
 
 ```
 
+### Instalações para suporte
+
+```bash
+# Instalar CLSX para criar condicionais em className
+npm install clsx
+```
+
 &nbsp;
 
 ---
