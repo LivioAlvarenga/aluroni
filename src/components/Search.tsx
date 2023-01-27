@@ -8,12 +8,13 @@ interface SearchProps {
 
 export default function Search({ search, setSearch }: SearchProps) {
   return (
-    <form className="flex h-11 w-full items-center justify-between gap-5 rounded-md bg-gray px-4 tablet:w-[400px]">
+    <form className="flex w-full items-center justify-between gap-5 rounded-md bg-gray px-4 tablet:w-[400px]">
       <input
         type="text"
-        className="w-full border-none bg-gray text-2xl font-bold outline-none placeholder:text-black"
+        placeholder="Buscar"
         value={search}
         onChange={(event) => setSearch(event.target.value)}
+        className="w-full border-none bg-gray py-3 text-xl font-bold outline-none placeholder:text-xl placeholder:text-black"
       />
       <CgSearch size={20} className="text-black" />
     </form>
