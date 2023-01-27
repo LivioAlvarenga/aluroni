@@ -120,6 +120,9 @@ export default defineConfig({
 
 # Instalando react-icons
 npm install react-icons
+
+# Instalar Menubar Radix
+npm install @radix-ui/react-menubar
 ```
 
 ### Instalando arquitetura Tailwindcss
@@ -161,6 +164,7 @@ npm run dev
 ```bash
 # Instalar CLSX para criar condicionais em className
 npm install clsx
+
 ```
 
 &nbsp;
