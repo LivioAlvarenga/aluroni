@@ -25,7 +25,7 @@ export default function Filter({ filter, setFilter }: FilterProps) {
           key={option.id}
           onClick={() => handleSelectFilter(option)}
           className={clsx(
-            "flex w-[150px] items-center justify-center rounded-md border-none bg-gray py-3 text-xl font-bold tracking-wider hover:cursor-pointer",
+            "flex w-[150px] items-center justify-center rounded-md border-none bg-gray py-3 text-xl font-bold tracking-wider hover:cursor-pointer hover:bg-blue hover:text-white transition-colors",
             {
               ["bg-blue text-white"]: filter === option.id,
             }
