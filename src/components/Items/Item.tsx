@@ -7,8 +7,12 @@ export default function Item(props: ItemProps) {
   const { title, description, category, size, serving, price, photo } = props;
   return (
     <div className="flex w-[90%] flex-wrap">
-      <div className="w-full desktop_md:w-auto desktop_md:min-w-[240px]">
-        <img className="w-full rounded-lg" src={photo} alt={title} />
+      <div className="w-full overflow-hidden rounded-lg desktop_md:w-auto desktop_md:min-w-[240px]">
+        <img
+          className="w-full rounded-lg duration-1000 ease-in-out hover:scale-125"
+          src={photo}
+          alt={title}
+        />
       </div>
       <div className="mt-5 flex flex-1 flex-row flex-wrap justify-around p-0 px-5 desktop_md:mt-0 desktop_md:flex-col desktop_md:px-5 desktop_md:py-0">
         <div>
