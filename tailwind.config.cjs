@@ -17,6 +17,10 @@ module.exports = {
         lightGray: "#f6f6f6",
         blue: "#282b57",
         red: "#d73b3b",
+        massas: "#d73b3b",
+        carnes: "#30201e",
+        combos: "#e6c864",
+        veganos: "#80aa40",
       },
     },
     screens: {
