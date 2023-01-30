@@ -9,7 +9,7 @@ import { useState } from "react";
 export default function home() {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState<number | null>(null);
-  const [ordenador, setOrdenador] = useState("")
+  const [ordenador, setOrdenador] = useState("");
 
   return (
     <main>
@@ -22,9 +22,9 @@ export default function home() {
         <Search search={search} setSearch={setSearch} />
         <div className="mb-8 flex w-full flex-wrap items-center justify-between">
           <Filter filter={filter} setFilter={setFilter} />
-          <Ordenador ordenador={ordenador} setOrdenador={setOrdenador}/>
+          <Ordenador ordenador={ordenador} setOrdenador={setOrdenador} />
         </div>
-        <Items />
+        <Items search={search} filter={filter} ordenador={ordenador} />
       </section>
     </main>
   );
