@@ -31,7 +31,7 @@ export default function home() {
         backgroundColor={"bg-red"}
         textColor={"text-white"}
         iconColor={"fill-white"}
-        hoverIconColor={"group-hover:lg:fill-blue"}
+        hoverIconColor={"group-hover:desktop_lg:fill-darkGray"}
       />
     </main>
   );

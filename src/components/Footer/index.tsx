@@ -18,7 +18,7 @@ export default function Footer({
   return (
     <footer className={`w-full text-base ${backgroundColor} ${textColor}`}>
       <Wrapper>
-        <div className="lg:justify-between flex flex-wrap items-center justify-center gap-5 py-7">
+        <div className="flex flex-wrap items-center justify-center gap-5 py-7 desktop_lg:justify-between">
           <IconList icons={icons} iconColor={iconColor} hoverIconColor={hoverIconColor} />
 
           <p className="">
