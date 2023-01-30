@@ -14,7 +14,7 @@
 
 @layer components {
   .paddingDefault {
-    @apply px-[100px] desktop_md:px-[150px] desktop_lg:px-[200px] desktop_xl:px-[250px];
+    @apply px-[5%] desktop_md:px-[150px] desktop_lg:px-[200px] desktop_xl:px-[250px];
   }
 }
 
