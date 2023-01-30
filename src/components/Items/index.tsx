@@ -22,12 +22,32 @@ export default function Items(props: ItensProps) {
     return true;
   }
 
+  const ordenarPropriedadeCrescente = (
+    lista: typeof itemsData,
+    propriedade: "size" | "serving" | "price"
+  ) => {
+    return lista.sort((a, b) => (a[propriedade] > b[propriedade] ? 1 : -1));
+  };
+
+  function order(newList: typeof itemsData) {
+    switch (ordenador) {
+      case "porcao":
+        return ordenarPropriedadeCrescente(newList, "size");
+      case "qtd_pessoas":
+        return ordenarPropriedadeCrescente(newList, "serving");
+      case "preco":
+        return ordenarPropriedadeCrescente(newList, "price");
+      default:
+        return newList;
+    }
+  }
+
   useEffect(() => {
     const newList = itemsData.filter(
       (item) => testSearch(item.title) && testFilter(item.category.id)
     );
-    setList(newList);
-  });
+    setList(order(newList));
+  }, [search, filter, ordenador]);
 
   return (
     <div className="flex w-full flex-col flex-wrap gap-10">
