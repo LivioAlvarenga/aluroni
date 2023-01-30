@@ -40,6 +40,7 @@ Usei a biblioteca CLSX para adicionar condicionais as className.
   <a href="https://github.com/LivioAlvarenga/aluroni"><img src="https://img.shields.io/github/languages/count/LivioAlvarenga/aluroni" alt="total amount of programming languages used in the project" /></a>
   <a href="https://github.com/LivioAlvarenga/aluroni"><img src="https://img.shields.io/github/languages/top/LivioAlvarenga/aluroni" alt="most used language in the projects" /></a>
   <a href="https://github.com/LivioAlvarenga/aluroni"><img src="https://img.shields.io/github/repo-size/LivioAlvarenga/aluroni" alt="repository size" /></a>
+  <a href="https://aluroni-livio-alvarenga.vercel.app/"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
 <p>
 
 &nbsp;
@@ -54,7 +55,7 @@ Usei a biblioteca CLSX para adicionar condicionais as className.
 | :placard: Vitrine.Dev |                                                                                                         |
 | --------------------- | ------------------------------------------------------------------------------------------------------- |
 | :sparkles: Nome       | **Cardápio de restaurante - Projeto React - TypeScript - ViteJs - Tailwindcss com arquivos estáticos.** |
-| :label: Tecnologias   | React, TypeScript, ViteJs, Tailwindcss, Radix, NodeJs, JavaScript, HTML5, CSS3, Prettier                |
+| :label: Tecnologias   | React, TypeScript, ViteJs, Tailwindcss, Radix UI, NodeJs, JavaScript, HTML5, CSS3, Prettier                |
 | :rocket: URL          | https://aluroni-livio-alvarenga.vercel.app/                                                             |
 
 ---
