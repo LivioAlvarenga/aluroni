@@ -7,7 +7,7 @@ module.exports = {
         italiana: ["Italiana", "sans-serif"],
       },
       backgroundImage: {
-        header: "url('./assets/header.png')",
+        header: "url('/assets/header.png')",
       },
       colors: {
         dark: "#242536",
