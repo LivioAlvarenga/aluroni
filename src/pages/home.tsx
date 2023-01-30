@@ -1,5 +1,6 @@
 import { ReactComponent as Logo } from "assets/logo.svg";
 import Filter from "components/Filter";
+import Footer from "components/Footer";
 import Header from "components/Header";
 import Items from "components/Items";
 import Ordenador from "components/Ordenador";
@@ -26,6 +27,12 @@ export default function home() {
         </div>
         <Items search={search} filter={filter} ordenador={ordenador} />
       </section>
+      <Footer
+        backgroundColor={"bg-red"}
+        textColor={"text-white"}
+        iconColor={"fill-white"}
+        hoverIconColor={"group-hover:lg:fill-blue"}
+      />
     </main>
   );
 }
