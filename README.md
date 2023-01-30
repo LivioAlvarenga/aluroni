@@ -1,5 +1,5 @@
 <h1 align="center"> 
-	Em construção...
+	Cardápio de restaurante - Projeto React - TypeScript - ViteJs - Tailwindcss com arquivos estáticos.
 </h1>
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
@@ -20,7 +20,19 @@
 
 ## 💻 Sobre o projeto
 
-🚀 Em construção...
+🚀 Cardápio de restaurante em React, TypeScript, Radix UI, ViteJs e Tailwindcss.
+
+Usei a metodologia Mobile-first, o projeto é responsivo para Mobile, Tablet, Desktop pequeno e grande.
+
+Aplicação com input de busca, filtros por categoria (massas, carnes, etc), ordenação por preços, porção etc.
+
+Foi utilizado o componente Radix UI Menubar para adicionar acessibilidade ao componente de ordenação.
+
+Usei o Tailwindcss para abstrair o CSS. Adicionei ao Tailwindcss cores, fontes e responsividade personalizadas.
+
+Usei a biblioteca CLSX para adicionar condicionais as className.
+
+&nbsp;
 
 <p align="center">
   <a href="#license"><img src="https://img.shields.io/github/license/LivioAlvarenga/aluroni?color=ff0000"></a>
@@ -39,11 +51,11 @@
 
 ## 📺 Vitrine Dev
 
-| :placard: Vitrine.Dev |                                                                                        |
-| --------------------- | -------------------------------------------------------------------------------------- |
-| :sparkles: Nome       | **Desenvolvendo um Planejador de Estudos com React, TypeScript, ViteJs e TailwindCss** |
-| :label: Tecnologias   | React, TypeScript, ViteJs, NodeJs, JavaScript, HTML5, CSS3, Prettier                   |
-| :rocket: URL          | https://study-planner-livio-alvarenga.vercel.app/                                      |
+| :placard: Vitrine.Dev |                                                                                                         |
+| --------------------- | ------------------------------------------------------------------------------------------------------- |
+| :sparkles: Nome       | **Cardápio de restaurante - Projeto React - TypeScript - ViteJs - Tailwindcss com arquivos estáticos.** |
+| :label: Tecnologias   | React, TypeScript, ViteJs, Tailwindcss, Radix, NodeJs, JavaScript, HTML5, CSS3, Prettier                |
+| :rocket: URL          | https://aluroni-livio-alvarenga.vercel.app/                                                             |
 
 ---
 
@@ -110,7 +122,6 @@ import { defineConfig } from "vite";
 import svgr from "vite-plugin-svgr";
 import tsconfigPaths from "vite-tsconfig-paths";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), svgr(), tsconfigPaths()],
 });
@@ -176,7 +187,12 @@ npm install clsx
 
 ## ⚙️ Funcionalidades
 
-- Em construção...
+- Buscar por descrição de pratos;
+- Filtrar por categoria de pratos;
+- Ordenar por preço, quantidade e serve quantas pessoas;
+- Efeito de zoom em imagens de pratos;
+- Menubar de ordenação com acessibilidade;
+- Cardápio responsivo Mobile, Tablet e Desktop.
 
 &nbsp;
 
