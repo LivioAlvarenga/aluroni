@@ -1,6 +1,7 @@
 import { ReactComponent as Logo } from "assets/logo.svg";
 import Filter from "components/Filter";
 import Header from "components/Header";
+import Items from "components/Items";
 import Ordenador from "components/Ordenador";
 import Search from "components/Search";
 import { useState } from "react";
@@ -23,6 +24,7 @@ export default function home() {
           <Filter filter={filter} setFilter={setFilter} />
           <Ordenador ordenador={ordenador} setOrdenador={setOrdenador}/>
         </div>
+        <Items />
       </section>
     </main>
   );
