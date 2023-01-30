@@ -55,7 +55,7 @@ Usei a biblioteca CLSX para adicionar condicionais as className.
 | :placard: Vitrine.Dev |                                                                                                         |
 | --------------------- | ------------------------------------------------------------------------------------------------------- |
 | :sparkles: Nome       | **Cardápio de restaurante - Projeto React - TypeScript - ViteJs - Tailwindcss com arquivos estáticos.** |
-| :label: Tecnologias   | React, TypeScript, ViteJs, Tailwindcss, Radix UI, NodeJs, JavaScript, HTML5, CSS3, Prettier                |
+| :label: Tecnologias   | React, TypeScript, ViteJs, Tailwindcss, Radix UI, NodeJs, JavaScript, HTML5, CSS3, Prettier             |
 | :rocket: URL          | https://aluroni-livio-alvarenga.vercel.app/                                                             |
 
 ---
@@ -187,6 +187,8 @@ npm install clsx
 <a id="-funcionalidades"></a>
 
 ## ⚙️ Funcionalidades
+
+![Aluroni-home](https://github.com/LivioAlvarenga/aluroni/blob/master/files/laptop.png?raw=true)
 
 - Buscar por descrição de pratos;
 - Filtrar por categoria de pratos;
