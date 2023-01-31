@@ -31,14 +31,14 @@ export default function Items(props: ItensProps) {
 
   function order(newList: typeof itemsData) {
     switch (ordenador) {
-      case "porcao":
-        return ordenarPropriedadeCrescente(newList, "size");
-      case "qtd_pessoas":
-        return ordenarPropriedadeCrescente(newList, "serving");
-      case "preco":
-        return ordenarPropriedadeCrescente(newList, "price");
-      default:
-        return newList;
+    case "porcao":
+      return ordenarPropriedadeCrescente(newList, "size");
+    case "qtd_pessoas":
+      return ordenarPropriedadeCrescente(newList, "serving");
+    case "preco":
+      return ordenarPropriedadeCrescente(newList, "price");
+    default:
+      return newList;
     }
   }
 
