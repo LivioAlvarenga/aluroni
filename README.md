@@ -32,6 +32,8 @@ Usei o Tailwindcss para abstrair o CSS. Adicionei ao Tailwindcss cores, fontes e
 
 Usei a biblioteca CLSX para adicionar condicionais as className.
 
+Como formatador e estile de código foi utilizado Prettier e Eslint.
+
 &nbsp;
 
 <p align="center">
@@ -52,11 +54,11 @@ Usei a biblioteca CLSX para adicionar condicionais as className.
 
 ## 📺 Vitrine Dev
 
-| :placard: Vitrine.Dev |                                                                                                         |
-| --------------------- | ------------------------------------------------------------------------------------------------------- |
-| :sparkles: Nome       | **Cardápio de restaurante - Projeto React - TypeScript - ViteJs - Tailwindcss com arquivos estáticos.** |
-| :label: Tecnologias   | React, TypeScript, ViteJs, Tailwindcss, Radix UI, NodeJs, JavaScript, HTML5, CSS3, Prettier             |
-| :rocket: URL          | https://aluroni-livio-alvarenga.vercel.app/                                                             |
+| :placard: Vitrine.Dev |                                                                                                                   |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| :sparkles: Nome       | **Cardápio de restaurante - Projeto React - TypeScript - ViteJs - Tailwindcss com arquivos estáticos.**           |
+| :label: Tecnologias   | React, React-Router, TypeScript, ViteJs, Tailwindcss, Radix UI, NodeJs, JavaScript, HTML5, CSS3, Prettier, Eslint |
+| :rocket: URL          | https://aluroni-livio-alvarenga.vercel.app/                                                                       |
 
 ---
 
@@ -77,9 +79,11 @@ As seguintes ferramentas foram usadas na construção do projeto
   <a href= "https://www.javascript.com/"><img alt="JavaScript badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=F7DF1E&logo=JavaScript&label=Language&message=JavaScript&color=F7DF1E"></a>
   <a href= "https://nodejs.org/en/"><img alt="Node.js badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=339933&logo=Node.js&label=Runtime Environment&message=Node.js&color=3139933"></a>
   <a href= "https://reactjs.org/"><img alt="React badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=61dafb&logo=React&label=Framework&message=React&color=61dafb"></a>
+  <a href= "https://reactrouter.com/"><img alt="React Router badge" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=ca4245&logo=React Router&label=Library&message=React Router&color=ca4245"></a>
   <a href= "https://vitejs.dev/"><img alt="site Vite" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=646cff&logo=Vite&label=Tooling&message=Vite&color=646cff"></a>
   <a href= "https://code.visualstudio.com/download"><img alt="vscode download" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=007ACC&logo=Visual Studio Code&label=IDE&message=Visual Studio Code&color=007ACC"></a>
   <a href= "https://github.com/prettier/prettier"><img alt="code formatter prettier" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=F7B93E&logo=Prettier&label=Code Formatter&message=Prettier&color=F7B93E"></a>
+  <a href= "https://eslint.org/"><img alt="code standardization eslint" src="https://img.shields.io/static/v1?logoWidth=15&logoColor=4B32C3&logo=ESLint&label=Code Standardization&message=ESLint&color=4B32C3"></a>
 </p>
 
 ---
@@ -171,12 +175,57 @@ npm run dev
 
 ```
 
+### Configurando ESlint
+
+```bash
+# Instalando Eslint
+npm init @eslint/config
+
+# √ How would you like to use ESLint? · style
+# √ What type of modules does your project use? · esm
+# √ Which framework does your project use? · react
+# √ Does your project use TypeScript? · Yes
+# √ Where does your code run? · browser
+# √ How would you like to define a style for your project? · prompt
+# √ What format do you want your config file to be in? · JSON
+# √ What style of indentation do you use? · 2
+# √ What quotes do you use for strings? · double
+# √ What line endings do you use? · windows
+# √ Do you require semicolons? · Yes
+
+# rodando o eslint e forçando os ajustes com --fix
+npx eslint ./src --fix
+
+# Adicionar no arquivo .eslintrs.json no campo rules a opção abaixo para não precisarmos importar o react no inicio do arquivo, as versões acima de 17 do react não tem necessidade de realizar a importação
+"react/react-in-jsx-scope": "off"
+```
+
 ### Instalações para suporte
 
 ```bash
 # Instalar CLSX para criar condicionais em className
 npm install clsx
 
+# Instalando Eslint
+npm init @eslint/config
+
+# √ How would you like to use ESLint? · style
+# √ What type of modules does your project use? · esm
+# √ Which framework does your project use? · react
+# √ Does your project use TypeScript? · Yes
+# √ Where does your code run? · browser
+# √ How would you like to define a style for your project? · prompt
+# √ What format do you want your config file to be in? · JSON
+# √ What style of indentation do you use? · 2
+# √ What quotes do you use for strings? · double
+# √ What line endings do you use? · windows
+# √ Do you require semicolons? · Yes
+
+# rodando o eslint e forçando os ajustes com --fix
+npx eslint ./src --fix
+
+# Adicionar no arquivo .eslintrs.json no campo rules a opção abaixo para não precisarmos importar o react no inicio do arquivo
+"react/react-in-jsx-scope": "off"
 ```
 
 &nbsp;
