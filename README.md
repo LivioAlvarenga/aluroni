@@ -201,6 +201,9 @@ npx eslint ./src --fix
 
 # Adicionar em ident a opção { "SwitchCase": 1 }, para corrigir erro de edentação em switchCase
 "indent": ["error", 2, { "SwitchCase": 1 }],
+
+# Adicionar ignorePatterns "*.config.cjs" para ignorar os arquivos de configuração. Ou adicione no top dos arquivos /* eslint-env node */, pois Node é o ambiente real durante a compilação.
+"ignorePatterns": ["*.config.cjs"]
 ```
 
 ### Instalações para suporte
