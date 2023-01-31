@@ -137,6 +137,9 @@ export default defineConfig({
 # Instalando react-icons
 npm install react-icons
 
+# Instalando react-router-dom
+npm install react-router-dom
+
 # Instalar Menubar Radix
 npm install @radix-ui/react-menubar
 ```
