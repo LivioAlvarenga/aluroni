@@ -1,8 +1,8 @@
-import { ReactComponent as Logo } from "assets/logo.svg";
 import Filter from "components/Filter";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import Items from "components/Items";
+import MenuNav from "components/MenuNav";
 import Ordenador from "components/Ordenador";
 import Search from "components/Search";
 import { useState } from "react";
@@ -14,9 +14,7 @@ export default function home() {
 
   return (
     <main>
-      <nav className="paddingDefault py-5">
-        <Logo />
-      </nav>
+      <MenuNav />
       <Header />
       <section className="paddingDefault py-[50px]">
         <h2 className="mb-8 text-5xl text-dark">Cardápio</h2>

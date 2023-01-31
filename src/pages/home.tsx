@@ -1,3 +1,4 @@
+import MenuNav from "components/MenuNav";
 import Wrapper from "components/Wrapper";
 import itemsMenuData from "data/itemsMenuData.json";
 
@@ -8,6 +9,7 @@ export default function home() {
   return (
     <Wrapper>
       <section className="flex flex-col">
+        <MenuNav />
         <h2 className="mb-8 text-5xl tracking-wider text-dark">
           Recomendações da cozinha
         </h2>
