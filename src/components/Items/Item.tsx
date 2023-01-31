@@ -1,7 +1,7 @@
 import clsx from "clsx";
-import itemsData from "./itemsData.json";
+import itemsMenuData from "data/itemsMenuData.json";
 
-type ItemProps = (typeof itemsData)[0];
+type ItemProps = (typeof itemsMenuData)[0];
 
 export default function Item(props: ItemProps) {
   const { title, description, category, size, serving, price, photo } = props;

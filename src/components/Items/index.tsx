@@ -1,6 +1,6 @@
+import itemsMenuData from "data/itemsMenuData.json";
 import { useEffect, useState } from "react";
 import Item from "./Item";
-import itemsData from "./itemsData.json";
 
 interface ItensProps {
   search: string;
@@ -9,7 +9,7 @@ interface ItensProps {
 }
 
 export default function Items(props: ItensProps) {
-  const [list, setList] = useState(itemsData);
+  const [list, setList] = useState(itemsMenuData);
   const { search, filter, ordenador } = props;
 
   function testSearch(title: string) {
@@ -23,27 +23,27 @@ export default function Items(props: ItensProps) {
   }
 
   const ordenarPropriedadeCrescente = (
-    lista: typeof itemsData,
+    lista: typeof itemsMenuData,
     propriedade: "size" | "serving" | "price"
   ) => {
     return lista.sort((a, b) => (a[propriedade] > b[propriedade] ? 1 : -1));
   };
 
-  function order(newList: typeof itemsData) {
+  function order(newList: typeof itemsMenuData) {
     switch (ordenador) {
-    case "porcao":
-      return ordenarPropriedadeCrescente(newList, "size");
-    case "qtd_pessoas":
-      return ordenarPropriedadeCrescente(newList, "serving");
-    case "preco":
-      return ordenarPropriedadeCrescente(newList, "price");
-    default:
-      return newList;
+      case "porcao":
+        return ordenarPropriedadeCrescente(newList, "size");
+      case "qtd_pessoas":
+        return ordenarPropriedadeCrescente(newList, "serving");
+      case "preco":
+        return ordenarPropriedadeCrescente(newList, "price");
+      default:
+        return newList;
     }
   }
 
   useEffect(() => {
-    const newList = itemsData.filter(
+    const newList = itemsMenuData.filter(
       (item) => testSearch(item.title) && testFilter(item.category.id)
     );
     setList(order(newList));
