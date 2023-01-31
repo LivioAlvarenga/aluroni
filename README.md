@@ -142,6 +142,9 @@ npm install react-router-dom
 
 # Instalar Menubar Radix
 npm install @radix-ui/react-menubar
+
+# Instalar Navigation Menu do Radix
+npm install @radix-ui/react-navigation-menu
 ```
 
 ### Instalando arquitetura Tailwindcss
