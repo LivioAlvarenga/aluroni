@@ -206,26 +206,6 @@ npx eslint ./src --fix
 # Instalar CLSX para criar condicionais em className
 npm install clsx
 
-# Instalando Eslint
-npm init @eslint/config
-
-# √ How would you like to use ESLint? · style
-# √ What type of modules does your project use? · esm
-# √ Which framework does your project use? · react
-# √ Does your project use TypeScript? · Yes
-# √ Where does your code run? · browser
-# √ How would you like to define a style for your project? · prompt
-# √ What format do you want your config file to be in? · JSON
-# √ What style of indentation do you use? · 2
-# √ What quotes do you use for strings? · double
-# √ What line endings do you use? · windows
-# √ Do you require semicolons? · Yes
-
-# rodando o eslint e forçando os ajustes com --fix
-npx eslint ./src --fix
-
-# Adicionar no arquivo .eslintrs.json no campo rules a opção abaixo para não precisarmos importar o react no inicio do arquivo
-"react/react-in-jsx-scope": "off"
 ```
 
 &nbsp;
