@@ -198,6 +198,9 @@ npx eslint ./src --fix
 
 # Adicionar no arquivo .eslintrs.json no campo rules a opção abaixo para não precisarmos importar o react no inicio do arquivo, as versões acima de 17 do react não tem necessidade de realizar a importação
 "react/react-in-jsx-scope": "off"
+
+# Adicionar em ident a opção { "SwitchCase": 1 }, para corrigir erro de edentação em switchCase
+"indent": ["error", 2, { "SwitchCase": 1 }],
 ```
 
 ### Instalações para suporte
