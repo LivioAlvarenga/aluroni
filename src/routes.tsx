@@ -2,6 +2,7 @@ import Footer from "components/Footer";
 import MenuNav from "components/MenuNav";
 import About from "pages/about";
 import DefaultPage from "pages/defaultPage";
+import FoodDetail from "pages/foodDetail";
 import Home from "pages/home";
 import Menu from "pages/menu";
 import PageNotFound from "pages/pageNotFound";
@@ -20,6 +21,7 @@ export default function AppRouter() {
           </Route>
           <Route path="404" element={<PageNotFound />} />
           <Route path="*" element={<Navigate to="404" />} />
+          <Route path="prato/:id/*" element={<FoodDetail />} />
         </Routes>
         <Footer
           backgroundColor={"bg-red"}

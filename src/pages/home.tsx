@@ -1,9 +1,17 @@
 import nossaCasa from "assets/images/nossa_casa.png";
 import itemsMenuData from "data/itemsMenuData.json";
+import { useNavigate } from "react-router-dom";
 
 export default function home() {
+  const navigate = useNavigate();
+
   let recommendedFood = [...itemsMenuData];
   recommendedFood = recommendedFood.sort(() => 0.5 - Math.random()).splice(0, 3);
+
+  function handleFoodDetail(food: (typeof itemsMenuData)[0]) {
+    navigate(`/prato/${food.id}`, { state: { ...food }, replace: true });
+    // Quando utilizamos essa propriedade, estamos dizendo que queremos substituir a última rota do histórico do navegador por essa rota que passamos como primeiro parâmetro. Sendo assim, caso voltássemos na rota anterior, não iríamos para essa rota substituída.
+  }
 
   return (
     <section className="my-20 flex flex-col">
@@ -18,7 +26,10 @@ export default function home() {
                 className="w-full rounded-lg duration-1000 ease-in-out hover:scale-125"
               />
             </div>
-            <button className="w-full cursor-pointer rounded-md border-none bg-red py-3 text-xl font-bold  text-white duration-500 ease-in-out hover:bg-redDark desktop_md:w-[300px]">
+            <button
+              onClick={() => handleFoodDetail(food)}
+              className="w-full cursor-pointer rounded-md border-none bg-red py-3 text-xl font-bold  text-white duration-500 ease-in-out hover:bg-redDark desktop_md:w-[300px]"
+            >
               Ver mais
             </button>
           </div>
