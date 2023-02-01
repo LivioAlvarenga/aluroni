@@ -1,11 +1,11 @@
 import Footer from "components/Footer";
 import MenuNav from "components/MenuNav";
+import About from "pages/about";
+import DefaultPage from "pages/defaultPage";
+import Home from "pages/home";
+import Menu from "pages/menu";
+import PageNotFound from "pages/pageNotFound";
 import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-dom";
-import About from "./pages/About";
-import DefaultPage from "./pages/DefaultPage";
-import Home from "./pages/Home";
-import Menu from "./pages/Menu";
-import PageNotFound from "./pages/PageNotFound";
 
 export default function AppRouter() {
   return (
