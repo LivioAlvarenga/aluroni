@@ -8,7 +8,7 @@ export default function About() {
   return (
     <section className="my-20 flex flex-col">
       <h2 className="mb-16 text-5xl text-dark">Sobre</h2>
-      <div className="mb-16 flex gap-5">
+      <div className="mb-5 flex flex-col gap-5 desktop_md:mb-16 desktop_md:flex-row">
         <img src={casa} alt="Casa Aluroni" />
         <div className="flex flex-col justify-center gap-5 py-5 font-josefinSans text-2xl tracking-normal">
           <p>
@@ -29,7 +29,7 @@ export default function About() {
       </div>
       <div className="flex flex-wrap justify-between gap-5">
         {images.map((img, i) => (
-          <div key={i} className="w-[600px]">
+          <div key={i} className="w-full desktop_md:w-[600px]">
             <img src={img} alt="imagem de massa" className="w-full rounded-md" />
           </div>
         ))}

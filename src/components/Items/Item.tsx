@@ -14,12 +14,14 @@ export default function Item(props: ItemProps) {
           alt={title}
         />
       </div>
-      <div className="mt-5 flex max-w-[700px]  flex-wrap justify-around p-0 desktop_md:mt-0 desktop_md:flex-col desktop_md:px-5 desktop_md:py-0">
-        <div>
+      <div className="mt-5 flex w-full flex-wrap justify-around p-0 desktop_md:mt-0 desktop_md:w-[700px] desktop_md:flex-col desktop_md:px-5 desktop_md:py-0">
+        <div className="w-full">
           <h3 className="mb-5 text-[2rem] font-bold">{title}</h3>
-          <p className="mb-5 font-josefinSans text-[1,3rem] tracking-normal font-semibold text-darkGray">{description}</p>
+          <p className="mb-5 font-josefinSans text-[1,3rem] font-semibold tracking-normal text-darkGray">
+            {description}
+          </p>
         </div>
-        <div className="mb-5 font-josefinSans tracking-normal flex flex-wrap items-center justify-start desktop_md:justify-between">
+        <div className="mb-5 flex w-full flex-wrap items-center justify-start gap-5 font-josefinSans tracking-normal tablet:justify-center desktop_md:justify-between">
           <div
             className={clsx(
               "flex h-10 items-center justify-center rounded-sm px-8 py-3 font-bold",

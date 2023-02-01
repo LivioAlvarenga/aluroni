@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-d
 
 export default function AppRouter() {
   return (
-    <main className="flex min-h-screen flex-col justify-between">
+    <main className="flex min-h-screen flex-col justify-between overflow-hidden">
       <Router>
         <MenuNav />
         <Routes>
