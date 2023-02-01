@@ -1,10 +1,10 @@
 import Footer from "components/Footer";
 import MenuNav from "components/MenuNav";
-import About from "pages/abouut";
+import About from "pages/about";
 import DefaultPage from "pages/defaultPage";
 import Home from "pages/home";
 import Menu from "pages/menu";
-import PageNotFound from "pages/pageNotFoundd";
+import PageNotFound from "pages/pageNotFound";
 import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-dom";
 
 export default function AppRouter() {
