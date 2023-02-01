@@ -24,14 +24,14 @@ export default function MenuNav() {
 
   return (
     <Wrapper>
-      <NavigationMenu.Root className="flex py-5">
+      <NavigationMenu.Root className="flex gap-16 py-5 ">
         <Logo />
         <NavigationMenu.List className="flex h-full items-center justify-center">
           {routes.map((rota, index) => (
             <NavigationMenu.Item key={index} className="h-full list-none px-5">
               <NavLink
                 to={rota.to}
-                className="group relative flex h-full cursor-pointer items-center justify-center text-2xl font-semibold tracking-wider text-dark no-underline duration-300 ease-in-out hover:text-darkGray"
+                className="group relative flex h-full cursor-pointer items-center justify-center text-2xl font-semibold text-dark no-underline duration-300 ease-in-out hover:text-darkGray"
               >
                 {rota.label}
                 <span
