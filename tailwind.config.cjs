@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        italiana: ["Italiana", "sans-serif"],
+        italiana: ["Italiana", "serif"],
+        josefinSans: ["JosefinSans", "sans-serif"],
       },
       backgroundImage: {
         header: "url('/assets/header.png')",
