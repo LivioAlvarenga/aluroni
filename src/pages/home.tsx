@@ -27,9 +27,9 @@ export default function home() {
       <h2 className="mb-16 text-5xl text-dark ">Nossa casa</h2>
       <div className="relative mb-16 w-full">
         <img src={nossaCasa} alt="Casa do aluroni" className="w-full rounded-md" />
-        <div className="absolute bottom-0 left-1/2 inline-flex translate-y-1/2 -translate-x-1/2 rounded-md bg-dark px-7 py-5 text-center text-lg font-bold leading-10 text-white">
+        <address className="absolute bottom-0 left-1/2 inline-flex translate-y-1/2 -translate-x-1/2 rounded-md bg-dark px-7 py-5 text-center text-lg font-bold not-italic leading-10 text-white">
           Rua Pernambuco, 3185 - Savassi <br /> <br /> Belo Horizonte - MG
-        </div>
+        </address>
       </div>
     </section>
   );
