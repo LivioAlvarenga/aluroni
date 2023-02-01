@@ -1,9 +1,10 @@
 import Footer from "components/Footer";
 import MenuNav from "components/MenuNav";
-import DefaultPage from "pages/defaultPage";
+import About from "pages/About";
+import DefaultPage from "pages/DefaultPage";
+import Home from "pages/Home";
+import Menu from "pages/Menu";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/home";
-import Menu from "./pages/menu";
 
 export default function AppRouter() {
   return (
@@ -14,6 +15,7 @@ export default function AppRouter() {
           <Route path="/" element={<DefaultPage />}>
             <Route index element={<Home />} />
             <Route path="cardapio" element={<Menu />} />
+            <Route path="sobre" element={<About />} />
           </Route>
         </Routes>
         <Footer
