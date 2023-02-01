@@ -19,7 +19,7 @@ export default function AppRouter() {
         backgroundColor={"bg-red"}
         textColor={"text-white"}
         iconColor={"fill-white"}
-        hoverIconColor={"group-hover:desktop_lg:fill-darkGray"}
+        hoverIconColor={"group-hover:desktop_lg:fill-dark"}
       />
     </Router>
   );
