@@ -26,7 +26,9 @@ Usei a metodologia Mobile-first, o projeto é responsivo para Mobile, Tablet, De
 
 Aplicação com input de busca, filtros por categoria (massas, carnes, etc), ordenação por preços, porção etc.
 
-Foi utilizado o componente Radix UI Menubar para adicionar acessibilidade ao componente de ordenação e Navigation Menu para acessibilidade no menu de navegação.
+Foi utilizado o componente Radix UI Menubar no componente de ordenação e Navigation Menu para gerar acessibilidade.
+
+Page not found 404 com animação de background.
 
 Usei o Tailwindcss para abstrair o CSS. Adicionei ao Tailwindcss cores, fontes e responsividade personalizadas.
 
@@ -237,7 +239,8 @@ npm install clsx
 - Efeito de zoom em imagens de pratos;
 - MenuNavigation com acessibilidade (Radix UI);
 - Menubar de ordenação com acessibilidade (Radix UI);
-- Cardápio responsivo Mobile, Tablet e Desktop.
+- Site responsivo Mobile, Tablet e Desktop.
+- Page not found 404 com animação de background.
 
 &nbsp;
 
