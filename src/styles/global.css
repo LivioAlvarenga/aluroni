@@ -12,12 +12,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .paddingDefault {
-    @apply px-[5%] desktop_md:px-[150px] desktop_lg:px-[200px] desktop_xl:px-[250px];
-  }
-}
-
 /* 
 $padding-horizontal-mobile: 100px;
 $padding-horizontal-sm: 150px;

@@ -31,7 +31,7 @@ export default function Ordenador({ ordenador, setOrdenador }: OrdenadorProps) {
           onClick={() => setOpen(!open)}
           data-name="TriggerBnt"
           className={clsx(
-            "flex min-w-[240px] items-center justify-between rounded-md bg-gray py-3 px-4 text-xl font-bold tracking-wider transition-all hover:cursor-pointer hover:bg-blue hover:text-white",
+            "flex min-w-[240px] items-center justify-between rounded-md bg-gray py-3 px-4 text-xl font-bold transition-all hover:cursor-pointer hover:bg-blue hover:text-white",
             {
               ["bg-blue text-white"]: open,
             }
@@ -57,7 +57,7 @@ export default function Ordenador({ ordenador, setOrdenador }: OrdenadorProps) {
                   onClick={(event) => handleOpen(event)}
                   onSelect={() => handleOrdenadorName(data.nome, data.value)}
                   className={clsx(
-                    "flex min-h-[50px] rounded-md py-3 pl-6 text-xl font-bold tracking-wider transition-colors hover:cursor-pointer hover:bg-darkGray hover:text-white",
+                    "flex min-h-[50px] rounded-md py-3 pl-6 text-xl font-bold transition-colors hover:cursor-pointer hover:bg-darkGray hover:text-white",
                     {
                       ["bg-blue text-white"]: ordenador === data.value,
                     }
