@@ -1,3 +1,4 @@
+import nossaCasa from "assets/images/nossa_casa.png";
 import itemsMenuData from "data/itemsMenuData.json";
 
 export default function home() {
@@ -6,8 +7,8 @@ export default function home() {
 
   return (
     <section className="my-20 flex flex-col">
-      <h2 className="mb-20 text-5xl text-dark">Recomendações da cozinha</h2>
-      <div className="flex flex-wrap justify-between gap-8 rounded-sm">
+      <h2 className="mb-16 text-5xl text-dark">Recomendações da cozinha</h2>
+      <div className="mb-16 flex flex-wrap justify-between gap-8 rounded-sm">
         {recommendedFood.map((food) => (
           <div key={food.id} className="w-full desktop_md:w-auto">
             <div className="mb-3 overflow-hidden rounded-lg desktop_md:w-[300px]">
@@ -22,6 +23,13 @@ export default function home() {
             </button>
           </div>
         ))}
+      </div>
+      <h2 className="mb-16 text-5xl text-dark ">Nossa casa</h2>
+      <div className="relative mb-16 w-full">
+        <img src={nossaCasa} alt="Casa do aluroni" className="w-full rounded-md" />
+        <div className="absolute bottom-0 left-1/2 inline-flex translate-y-1/2 -translate-x-1/2 rounded-md bg-dark px-7 py-5 text-center text-lg font-bold leading-10 text-white">
+          Rua Pernambuco, 3185 - Savassi <br /> <br /> Belo Horizonte - MG
+        </div>
       </div>
     </section>
   );
