@@ -19,9 +19,9 @@ export default function AppRouter() {
             <Route path="cardapio" element={<Menu />} />
             <Route path="sobre" element={<About />} />
           </Route>
+          <Route path="prato/:id/*" element={<FoodDetail />} />
           <Route path="404" element={<PageNotFound />} />
           <Route path="*" element={<Navigate to="404" />} />
-          <Route path="prato/:id/*" element={<FoodDetail />} />
         </Routes>
         <Footer
           backgroundColor={"bg-red"}
