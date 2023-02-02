@@ -15,6 +15,8 @@
 
 ![Aluroni](https://github.com/LivioAlvarenga/aluroni/blob/master/files/capa.gif?raw=true#vitrinedev)
 
+![Aluroni-404](https://github.com/LivioAlvarenga/aluroni/blob/master/files/404.gif?raw=true)
+
 &nbsp;
 <a id="-sobre-o-projeto"></a>
 
@@ -249,6 +251,10 @@ npm install clsx
 - Page not found 404 com animação personalizada de background.
 - Animação de card em cardápio.
 - SPA com Home, Cardápio, Detalhamento de prato, Sobre e PageNotFound 404.
+
+![Aluroni-desktop](https://github.com/LivioAlvarenga/aluroni/blob/master/files/desktop.png?raw=true)
+
+
 
 &nbsp;
 
