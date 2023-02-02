@@ -1,5 +1,5 @@
 <h1 align="center"> 
-	Cardápio de restaurante - Projeto React - TypeScript - ViteJs - Tailwindcss com arquivos estáticos.
+	SPA (single page application) de restaurante - Projeto React/React-router-dom - TypeScript - ViteJs - Tailwindcss.
 </h1>
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
@@ -20,7 +20,7 @@
 
 ## 💻 Sobre o projeto
 
-🚀 Cardápio de restaurante em React, TypeScript, Radix UI, ViteJs e Tailwindcss.
+🚀 SPA com Home, Cardápio, Detalhamento de prato, Sobre e PageNotFound 404 de restaurante em React, React-Router, TypeScript, Radix UI, ViteJs e Tailwindcss.
 
 Usei a metodologia Mobile-first, o projeto é responsivo para Mobile, Tablet, Desktop pequeno e grande.
 
@@ -32,9 +32,15 @@ Page not found 404 com animação de background.
 
 Usei o Tailwindcss para abstrair o CSS. Adicionei ao Tailwindcss cores, fontes e responsividade personalizadas.
 
+Usei React Router Dom para gerenciamento de rotas.
+
 Usei a biblioteca CLSX para adicionar condicionais as className.
 
 Como formatador e estile de código foi utilizado Prettier e Eslint.
+
+Deploy na Vercel.
+
+![Aluroni-mobile](https://github.com/LivioAlvarenga/aluroni/blob/master/files/mobile.png?raw=true)
 
 &nbsp;
 
@@ -56,11 +62,11 @@ Como formatador e estile de código foi utilizado Prettier e Eslint.
 
 ## 📺 Vitrine Dev
 
-| :placard: Vitrine.Dev |                                                                                                                   |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| :sparkles: Nome       | **Cardápio de restaurante - Projeto React - TypeScript - ViteJs - Tailwindcss com arquivos estáticos.**           |
-| :label: Tecnologias   | React, React-Router, TypeScript, ViteJs, Tailwindcss, Radix UI, NodeJs, JavaScript, HTML5, CSS3, Prettier, Eslint |
-| :rocket: URL          | https://aluroni-livio-alvarenga.vercel.app/                                                                       |
+| :placard: Vitrine.Dev |                                                                                                                        |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| :sparkles: Nome       | **SPA (single page application) de restaurante - Projeto React/React-router-dom - TypeScript - ViteJs - Tailwindcss.** |
+| :label: Tecnologias   | React, React-Router, TypeScript, ViteJs, Tailwindcss, Radix UI, NodeJs, JavaScript, HTML5, CSS3, Prettier, Eslint      |
+| :rocket: URL          | https://aluroni-livio-alvarenga.vercel.app/                                                                            |
 
 ---
 
@@ -240,7 +246,9 @@ npm install clsx
 - MenuNavigation com acessibilidade (Radix UI);
 - Menubar de ordenação com acessibilidade (Radix UI);
 - Site responsivo Mobile, Tablet e Desktop.
-- Page not found 404 com animação de background.
+- Page not found 404 com animação personalizada de background.
+- Animação de card em cardápio.
+- SPA com Home, Cardápio, Detalhamento de prato, Sobre e PageNotFound 404.
 
 &nbsp;
 
