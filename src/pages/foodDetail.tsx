@@ -13,7 +13,7 @@ export default function FoodDetail() {
   }
 
   return (
-    <Wrapper className="overflow-hidden">
+    <Wrapper className="overflow-hidden px-0">
       <button
         onClick={() => navigate(-1)}
         className="my-8 block cursor-pointer rounded-lg border-none bg-transparent py-2 text-2xl font-bold text-red duration-500 ease-in-out hover:bg-red hover:text-white desktop_md:min-w-[152px] desktop_md:px-3 desktop_md:py-3"
