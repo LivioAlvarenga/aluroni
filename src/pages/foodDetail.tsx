@@ -15,7 +15,7 @@ export default function FoodDetail() {
     <Wrapper className="overflow-hidden">
       <button
         onClick={() => navigate(-1)}
-        className="mb-8 block cursor-pointer rounded-lg border-none bg-transparent py-2 text-2xl font-bold text-red duration-500 ease-in-out hover:bg-red hover:text-white tablet:mt-4 desktop_md:mt-0 desktop_md:mb-10 desktop_md:min-w-[152px] desktop_md:px-3 desktop_md:py-3"
+        className="my-8 block cursor-pointer rounded-lg border-none bg-transparent py-2 text-2xl font-bold text-red duration-500 ease-in-out hover:bg-red hover:text-white desktop_md:min-w-[152px] desktop_md:px-3 desktop_md:py-3"
       >
         {"< Voltar"}
       </button>
