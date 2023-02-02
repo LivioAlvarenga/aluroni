@@ -1,6 +1,7 @@
 import nossaCasa from "assets/images/nossa_casa.png";
 import itemsMenuData from "data/itemsMenuData.json";
 import { useNavigate } from "react-router-dom";
+import { FoodProps } from "types/itemsMenu";
 
 export default function home() {
   const navigate = useNavigate();
@@ -8,7 +9,7 @@ export default function home() {
   let recommendedFood = [...itemsMenuData];
   recommendedFood = recommendedFood.sort(() => 0.5 - Math.random()).splice(0, 3);
 
-  function handleFoodDetail(food: (typeof itemsMenuData)[0]) {
+  function handleFoodDetail(food: FoodProps) {
     navigate(`/prato/${food.id}`, { state: { food }, replace: true });
     // Quando utilizamos essa propriedade, estamos dizendo que queremos substituir a última rota do histórico do navegador por essa rota que passamos como primeiro parâmetro. Sendo assim, caso voltássemos na rota anterior, não iríamos para essa rota substituída.
   }

@@ -1,9 +1,7 @@
 import clsx from "clsx";
-import itemsMenuData from "data/itemsMenuData.json";
+import { FoodProps } from "types/itemsMenu";
 
-type ItemProps = (typeof itemsMenuData)[0];
-
-export default function Item(props: ItemProps) {
+export default function Item(props: FoodProps) {
   const { title, description, category, size, serving, price, photo } = props;
   return (
     <div className="flex flex-wrap overflow-hidden">

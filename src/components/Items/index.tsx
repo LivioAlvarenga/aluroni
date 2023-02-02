@@ -1,5 +1,6 @@
 import itemsMenuData from "data/itemsMenuData.json";
 import { useEffect, useState } from "react";
+import { ItemsMenuDataProps } from "types/itemsMenu";
 import Item from "./Item";
 
 interface ItensProps {
@@ -23,13 +24,13 @@ export default function Items(props: ItensProps) {
   }
 
   const ordenarPropriedadeCrescente = (
-    lista: typeof itemsMenuData,
+    lista: ItemsMenuDataProps,
     propriedade: "size" | "serving" | "price"
   ) => {
     return lista.sort((a, b) => (a[propriedade] > b[propriedade] ? 1 : -1));
   };
 
-  function order(newList: typeof itemsMenuData) {
+  function order(newList: ItemsMenuDataProps) {
     switch (ordenador) {
       case "porcao":
         return ordenarPropriedadeCrescente(newList, "size");
