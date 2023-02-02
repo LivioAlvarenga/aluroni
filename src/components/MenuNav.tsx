@@ -31,12 +31,12 @@ export default function MenuNav() {
             <NavigationMenu.Item key={index} className="h-full list-none px-5">
               <NavLink
                 to={rota.to}
-                className="group relative flex h-full cursor-pointer items-center justify-center text-2xl font-semibold text-dark no-underline duration-300 ease-in-out hover:text-darkGray"
+                className="group relative flex h-full cursor-pointer items-center justify-center text-2xl font-semibold text-dark no-underline duration-300 ease-in-out desktop_md:hover:text-darkGray"
               >
                 {rota.label}
                 <span
                   className={clsx("duration-300 ease-in-out", {
-                    ["absolute bottom-5 h-1 w-[calc(100%_-_30%)] rounded-3xl bg-red tablet:bottom-1 group-hover:tablet:bg-dark"]:
+                    ["absolute bottom-5 h-1 w-[calc(100%_-_30%)] rounded-3xl bg-red tablet:bottom-1 group-hover:desktop_lg:bg-dark"]:
                       location === rota.to,
                   })}
                 ></span>
