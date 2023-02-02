@@ -1,14 +1,22 @@
 import clsx from "clsx";
 import Wrapper from "components/Wrapper";
 import itemsMenuData from "data/itemsMenuData.json";
-import { useLocation } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 export default function FoodDetail() {
-  const { state } = useLocation();
-  const { food } = state as { food: (typeof itemsMenuData)[0] };
+  const navigate = useNavigate();
+  const { id } = useParams();
+  const food = itemsMenuData.find((item) => item.id === Number(id));
+  if (!food) {
+    return "";
+  }
+
   return (
     <Wrapper className="overflow-hidden">
-      <button className="mb-8 block cursor-pointer rounded-lg border-none bg-transparent py-2 text-2xl font-bold text-red duration-500 ease-in-out hover:bg-red hover:text-white tablet:mt-4 desktop_md:mt-0 desktop_md:mb-10 desktop_md:min-w-[152px] desktop_md:px-3 desktop_md:py-3">
+      <button
+        onClick={() => navigate(-1)}
+        className="mb-8 block cursor-pointer rounded-lg border-none bg-transparent py-2 text-2xl font-bold text-red duration-500 ease-in-out hover:bg-red hover:text-white tablet:mt-4 desktop_md:mt-0 desktop_md:mb-10 desktop_md:min-w-[152px] desktop_md:px-3 desktop_md:py-3"
+      >
         {"< Voltar"}
       </button>
       <section className="flex w-full flex-col gap-8 tablet:gap-10 desktop_md:mb-10 desktop_md:flex-row desktop_md:gap-11">
