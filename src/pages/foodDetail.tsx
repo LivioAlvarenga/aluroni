@@ -2,13 +2,14 @@ import clsx from "clsx";
 import Wrapper from "components/Wrapper";
 import itemsMenuData from "data/itemsMenuData.json";
 import { useNavigate, useParams } from "react-router-dom";
+import PageNotFound from "./pageNotFound";
 
 export default function FoodDetail() {
   const navigate = useNavigate();
   const { id } = useParams();
   const food = itemsMenuData.find((item) => item.id === Number(id));
   if (!food) {
-    return "";
+    return <PageNotFound />;
   }
 
   return (
