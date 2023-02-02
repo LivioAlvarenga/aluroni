@@ -52,7 +52,7 @@ export default function PageNotFound() {
         alt="page not found"
       />
       <Wrapper className="z-50 flex h-full flex-col items-center justify-center text-white">
-        <h2 className="mb-[12vh] text-[20vh] leading-4 text-redDark desktop_md:mb-[20vh] desktop_md:text-[35vh]">
+        <h2 className="mb-[12vh] text-[18vh] leading-4 text-redDark desktop_md:mb-[20vh] desktop_md:text-[35vh]">
           404
         </h2>
         <h1 className="mb-8 text-2xl font-bold tablet:text-4xl desktop_md:text-5xl">

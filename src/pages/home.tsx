@@ -36,14 +36,14 @@ export default function home() {
         ))}
       </div>
       <h2 className="mb-16 text-5xl text-dark ">Nossa casa</h2>
-      <div className="relative mb-16 w-full">
+      <div className="relative mb-24 w-full desktop_md:mb-16">
         <img
           src={nossaCasa}
           alt="Casa do aluroni"
           className="h-[300px] w-full rounded-md object-cover desktop_md:h-auto"
         />
         <address className="absolute bottom-0 left-1/2 inline-flex w-5/6 translate-y-[80%] -translate-x-1/2 justify-center rounded-md bg-dark px-7 py-5 text-center text-lg font-bold not-italic leading-10 text-white desktop_md:w-auto desktop_md:translate-y-1/2">
-          Rua Pernambuco, 3185 - Savassi <br /> <br /> Belo Horizonte - MG
+          Rua Pernambuco, 3185 - Savassi <br /> Belo Horizonte - MG
         </address>
       </div>
     </section>
